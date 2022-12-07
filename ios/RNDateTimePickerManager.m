@@ -21,7 +21,7 @@
 
 @implementation RCTConvert(UIDatePicker)
 
-RCT_ENUM_CONVERTER(UIDatePickerMode, (@{
+RCT_ENUM_CONVERTER(UIDateTimePickerMode, (@{
   @"time": @(UIDatePickerModeTime),
   @"date": @(UIDatePickerModeDate),
   @"datetime": @(UIDatePickerModeDateAndTime),
@@ -101,7 +101,7 @@ RCT_EXPORT_MODULE()
 }
 
 RCT_EXPORT_SHADOW_PROPERTY(date, NSDate)
-RCT_EXPORT_SHADOW_PROPERTY(mode, UIDatePickerMode)
+RCT_EXPORT_SHADOW_PROPERTY(mode, UIDateTimePickerMode)
 RCT_EXPORT_SHADOW_PROPERTY(locale, NSLocale)
 RCT_EXPORT_SHADOW_PROPERTY(displayIOS, RNCUIDatePickerStyle)
 
@@ -114,7 +114,7 @@ RCT_EXPORT_VIEW_PROPERTY(enabled, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onPickerDismiss, RCTBubblingEventBlock)
 
-RCT_REMAP_VIEW_PROPERTY(mode, datePickerMode, UIDatePickerMode)
+RCT_REMAP_VIEW_PROPERTY(mode, datePickerMode, UIDateTimePickerMode)
 RCT_REMAP_VIEW_PROPERTY(timeZoneOffsetInMinutes, timeZone, NSTimeZone)
 
 RCT_CUSTOM_VIEW_PROPERTY(themeVariant, UIUserInterfaceStyle, RNDateTimePicker) {

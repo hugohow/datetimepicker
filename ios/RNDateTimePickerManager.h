@@ -10,7 +10,7 @@
 
 @interface RCTConvert(UIDatePicker)
 
-+ (UIDatePickerMode)UIDatePickerMode:(id)json;
++ (UIDateTimePickerMode)UIDateTimePickerMode:(id)json;
 
 @end
 
