@@ -20,7 +20,7 @@
   YGNodeMarkDirty(self.yogaNode);
 }
 
-- (void)setMode:(UIDatePickerMode)mode {
+- (void)setMode:(UIDateTimePickerMode)mode {
   _mode = mode;
   YGNodeMarkDirty(self.yogaNode);
 }

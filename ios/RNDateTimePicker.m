@@ -52,7 +52,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
   }
 }
 
-- (void)setDatePickerMode:(UIDatePickerMode)datePickerMode
+- (void)setDatePickerMode:(UIDateTimePickerMode)datePickerMode
 {
   [super setDatePickerMode:datePickerMode];
   // We need to set minuteInterval after setting datePickerMode, otherwise minuteInterval is invalid in time mode.
